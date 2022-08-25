@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" href="logo.jpeg">
+        <title>Number Guesser!</title>
+    </head>
+    <body id="body">
+        <center>
+            <h1>Number Guesser!</h1>
+            <h2>A Guessing Game</h2>
+            <h2 style="text-decoration:underline;">Overview</h2>
+            <h3>The computer will pick a number from 0 to 10.</h3>
+            <h3>You will guess which number it chose.</h3>
+            <h3>You can see combined stats of every player and yourself below.</h3>
+            <h2 style="text-decoration:underline;">Stats</h2>
+            <h3 id="global">A total of 0 correct guesses out of 0 total guesses globally made to date!</h3>
+            <h3 id="personal">You've made a total of 0 correct guesses out of 0 total guesses to date!</h3>
+            <h3>Stats update every 5 seconds.</h3>
+            <h2 style="text-decoration:underline;">Play</h2>
+            <h3>Your Guess:</h3>
+            <input type="number" id="guessInput" style="font-size:20px; text-align: center;" oninput="check()">
+            <br> <br>
+            <button type="button" class="btn btn-light" style="font-size:20px;" onclick="guess()">Submit Guess</button>
+            <h3 id="lga">Last Guess Result: N/A</h3>
+            <h3 id="lg">Last Guess: N/A</h3>
+            <h3 id="lca">Last Correct Answer: N/A</h3>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

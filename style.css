@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+#body h2 {
+    font-weight: lighter;
+}
+#body h1 {
+    font-weight: 200;
+}
+#body h3 {
+    font-weight: lighter;
+}
+#body button:hover {
+    background-color: gray;
+}
